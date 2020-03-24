@@ -4,9 +4,9 @@
       <div class="section-wrapper">
         <h1>
           <svg class="section-icon"><use xlink:href="assets/img/icons.svg#icon-notification"></use></svg>
-          Desktop notifications
+          通知notifications
         </h1>
-        <h3>The <code>notification</code> module in Electron allows you to add basic desktop notifications.</h3>
+        <h3> <code>notification</code>模块可添加系统通知</h3>
 
         <p>Electron conveniently allows developers to send notifications with the <a href="https://notifications.spec.whatwg.org/">HTML5 Notification API</a>, using the currently running operating system’s native notification APIs to display it.</p>
 
@@ -18,14 +18,14 @@
 
     <div class="demo">
       <div class="demo-wrapper">
-        <button id="basic-notification-demo-toggle" class="js-container-target demo-toggle-button">Basic notification
+        <button id="basic-notification-demo-toggle" class="js-container-target demo-toggle-button">基础通知 Notification
           <div class="demo-meta u-avoid-clicks">Supports: Win 7+, macOS, Linux (that supports libnotify)<span class="demo-meta-divider">|</span> Process: Renderer</div>
         </button>
         <div class="demo-box">
           <div class="demo-controls">
-            <button class="demo-button" id="basic-noti">View demo</button>
+            <button class="demo-button" id="basic-noti">查看</button>
           </div>
-          <p>This demo demonstrates a basic notification. Text only.</p>
+          <p>添加标题、icon</p>
           <h5>Renderer Process</h5>
           <pre><code data-path="renderer-process/native-ui/notifications/basic-notification.js"></pre></code>
         </div>
@@ -34,14 +34,14 @@
 
     <div class="demo">
       <div class="demo-wrapper">
-        <button id="advanced-notification-demo-toggle" class="js-container-target demo-toggle-button">Notification with image
+        <button id="advanced-notification-demo-toggle" class="js-container-target demo-toggle-button">图文通知 Notification
           <div class="demo-meta u-avoid-clicks">Supports: Win 7+, macOS, Linux (that supports libnotify) <span class="demo-meta-divider">|</span> Process: Renderer</div>
         </button>
         <div class="demo-box">
           <div class="demo-controls">
             <button class="demo-button" id="advanced-noti">View demo</button>
           </div>
-          <p>This demo demonstrates a basic notification. Both text and a image</p>
+          <p>支持标题、icon、图片</p>
           <h5>Renderer Process</h5>
           <pre><code data-path="renderer-process/native-ui/notifications/advanced-notification.js"></pre></code>
         </div>

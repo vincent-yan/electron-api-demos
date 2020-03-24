@@ -19,25 +19,22 @@
 
     <div class="demo">
       <div class="demo-wrapper">
-        <button id="application-menu-demo-toggle" class="js-container-target demo-toggle-button">创建application menu
+        <button id="application-menu-demo-toggle" class="js-container-target demo-toggle-button">应用菜单application menu
           <div class="demo-meta u-avoid-clicks">Supports: Win, macOS, Linux <span class="demo-meta-divider">|</span>
             Process: Main</div>
         </button>
         <div class="demo-box">
           <p> <code>Menu</code> 和 <code>MenuItem</code> 可以自定义程序菜单. 如果不设置菜单, Electro会默认配置最小的菜单</p>
 
-          <p>This app uses the code below to set the application menu. If you click the 'View' option in the application
-            menu and then the 'App Menu Demo', you'll see an information box displayed.</p>
+          <p>当前app设置代码如下.效果查看当前app顶部菜单 </p>
           <h5>Main Process</h5>
           <pre><code data-path="main-process/menus/application-menu.js"></code></pre>
 
           <div class="demo-protip">
             <h2>ProTip</h2>
-            <strong>Know operating system menu differences.</strong>
-            <p>When designing an app for multiple operating systems it's important to be mindful of the ways application
-              menu conventions differ on each operating system.</p>
-            <p>For instance, on Windows, accelerators are set with an <code>&</code>. Naming conventions also vary, like
-              between "Settings" or "Preferences". Below are resources for learning operating system specific standards.
+            <strong>了解各个操作系统的菜单区别</strong>
+            <p>在设计应用时候，如果要支持多系统，就要熟悉各个系统菜单设置的区别</p>
+            <p>For instance, on Windows, accelerators are set with an <code>&</code>. Naming conventions also vary, like between "Settings" or "Preferences". 参考如下.
             </p>
             <ul>
               <li><a href="https://developer.apple.com/macos/human-interface-guidelines/menus/menu-anatomy/">macOS<span
@@ -54,7 +51,7 @@
 
     <div class="demo">
       <div class="demo-wrapper">
-        <button id="context-menu-demo-toggle" class="js-container-target demo-toggle-button">Create a context menu
+        <button id="context-menu-demo-toggle" class="js-container-target demo-toggle-button">右键菜单 context menu
           <div class="demo-meta u-avoid-clicks">Supports: Win, macOS, Linux <span class="demo-meta-divider">|</span>
             Process: Main</div>
         </button>
@@ -62,12 +59,11 @@
           <div class="demo-controls">
             <button class="demo-button" id="context-menu">View Demo</button>
           </div>
-          <p>A context, or right-click, menu can be created with the <code>Menu</code> and <code>MenuItem</code> modules
-            as well. You can right-click anywhere in this app or click the demo button to see an example context menu.
+          <p><code>Menu</code> and <code>MenuItem</code> modules
+            可以创建右键菜单，在app任何位置点击右键都可以显示右键菜单
           </p>
 
-          <p>In this demo we use the <code>ipcRenderer</code> module to show the context menu when explicitly calling it
-            from the renderer process.</p>
+          <p>Demo通过 <code>ipcRenderer</code> 接收消息在渲染进程中控制菜单显示</p>
           <p>See the full <a href="http://electron.atom.io/docs/api/web-contents/#event-context-menu">context-menu event
               documentation</a> for all the available properties.</p>
           <h5>Main Process</h5>
