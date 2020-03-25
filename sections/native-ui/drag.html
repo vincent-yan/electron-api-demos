@@ -4,9 +4,10 @@
       <div class="section-wrapper">
         <h1>
           <svg class="section-icon"><use xlink:href="assets/img/icons.svg#icon-native-ui"></use></svg>
-          Drag and drop files
+          drag & drop （拖拽文件）
         </h1>
-        <h3>Electron supports dragging files and content out from web content into the operating system's world.</h3>
+        
+        <h3>Electron支持拖拽文件到系统目录</h3>
 
         <p>Open the <a href="https://electronjs.org/docs/tutorial/native-file-drag-drop">full API documentation<span class="u-visible-to-screen-reader">(opens in new window)</span></a> in your browser.</p>
       </div>
@@ -19,11 +20,11 @@
         </button>
         <div class="demo-box">
           <div class="demo-controls">
-            <a href="#" id="drag-file-link">Drag Demo</a>
+            <a href="#" id="drag-file-link">点击拖拽</a>
           </div>
-          <p>Click and drag the link above to copy the renderer process javascript file on to your machine.</p>
+          <p>点击拖拽链接 将渲染进程文件复制到拖拽的目录.</p>
 
-          <p>In this demo, the <code>webContents.startDrag()</code> API is called in response to the <code>ondragstart</code> event.</p>
+          <p> 渲染进程监听<code>dragstart</code>拖拽 通知主进程<code>startDrag</code></p>
           <h5>Renderer Process</h5>
           <pre><code data-path="renderer-process/native-ui/drag/drag.js"></code></pre>
           <h5>Main Process</h5>

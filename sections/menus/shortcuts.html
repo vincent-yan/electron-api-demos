@@ -3,17 +3,17 @@
     <header class="section-header">
       <div class="section-wrapper">
         <h1>
-          <svg class="section-icon"><use xlink:href="assets/img/icons.svg#icon-menu"></use></svg>
-          Keyboard Shortcuts
+          <svg class="section-icon">
+            <use xlink:href="assets/img/icons.svg#icon-menu"></use>
+          </svg>
+          系统快捷键
         </h1>
 
-        <h3>The <code>globalShortcut</code> and <code>Menu</code> modules can be used to define keyboard shortcuts.</h3>
+        <h3> <code>globalShortcut</code> 、 <code>Menu</code> 定义快捷键</h3>
 
         <p>
-          In Electron, keyboard shortcuts are called accelerators.
-          They can be assigned to actions in your application's Menu,
-          or they can be assigned globally so they'll be triggered even when
-          your app doesn't have keyboard focus.
+          Electron 快捷键被称为加速器.
+          可以设置映射到Menu菜单项, 也可以定义成全局快捷键这样在app失去焦点也可以使用
         </p>
 
         <p>
@@ -30,12 +30,14 @@
 
     <div class="demo">
       <div class="demo-wrapper">
-        <button id="shortcuts-demo-toggle" class="js-container-target demo-toggle-button">Register a global keyboard shortcut
-          <div class="demo-meta u-avoid-clicks">Supports: Win, macOS, Linux <span class="demo-meta-divider">|</span> Process: Main</div>
+        <button id="shortcuts-demo-toggle" class="js-container-target demo-toggle-button">注册全局快捷键
+          shortcut
+          <div class="demo-meta u-avoid-clicks">Supports: Win, macOS, Linux <span class="demo-meta-divider">|</span>
+            Process: Main</div>
         </button>
         <div class="demo-box">
           <p>
-            To try this demo, press <kbd class="normalize-to-platform">CommandOrControl+Alt+K</kbd> on your keyboard.
+            点击<kbd class="normalize-to-platform">CommandOrControl+Alt+K</kbd> 组合键
           </p>
 
           <p>
@@ -58,9 +60,13 @@
             </p>
 
             <ul>
-              <li><a class="u-exlink" href="https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/Keyboard.html">macOS</a></li>
-              <li><a class="u-exlink" href="http://windows.microsoft.com/en-us/windows-10/keyboard-shortcuts">Windows</a></li>
-              <li><a class="u-exlink" href="https://developer.gnome.org/hig/stable/keyboard-input.html.en">Linux</a></li>
+              <li><a class="u-exlink"
+                  href="https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/Keyboard.html">macOS</a>
+              </li>
+              <li><a class="u-exlink"
+                  href="http://windows.microsoft.com/en-us/windows-10/keyboard-shortcuts">Windows</a></li>
+              <li><a class="u-exlink" href="https://developer.gnome.org/hig/stable/keyboard-input.html.en">Linux</a>
+              </li>
             </ul>
           </div>
 
