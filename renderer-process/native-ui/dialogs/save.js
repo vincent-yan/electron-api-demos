@@ -7,6 +7,6 @@ saveBtn.addEventListener('click', (event) => {
 })
 
 ipcRenderer.on('saved-file', (event, path) => {
-  if (!path) path = 'No path'
-  document.getElementById('file-saved').innerHTML = `Path selected: ${path}`
+  if (!path) path = '无路径'
+  document.getElementById('file-saved').innerHTML = `已选择的路径: ${path}`
 })

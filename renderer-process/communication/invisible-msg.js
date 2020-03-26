@@ -11,10 +11,7 @@ invisMsgBtn.addEventListener('click', (clickEvent) => {
   let win = new BrowserWindow({
     width: 400,
     height: 400,
-    show: false,
-    webPreferences: {
-      nodeIntegration: true
-    }
+    show: false
   })
   win.loadURL(invisPath)
 
@@ -25,6 +22,6 @@ invisMsgBtn.addEventListener('click', (clickEvent) => {
 })
 
 ipcRenderer.on('factorial-computed', (event, input, output) => {
-  const message = `The factorial of ${input} is ${output}`
+  const message = `${input} 的阶乘是 ${output}`
   invisReply.textContent = message
 })

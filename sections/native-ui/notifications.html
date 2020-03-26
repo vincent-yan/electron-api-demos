@@ -4,29 +4,29 @@
       <div class="section-wrapper">
         <h1>
           <svg class="section-icon"><use xlink:href="assets/img/icons.svg#icon-notification"></use></svg>
-          通知notifications
+          桌面通知
         </h1>
-        <h3> <code>notification</code>模块可添加系统通知</h3>
+        <h3>使用 Electron 中的 <code>notification</code> 模块可以允许你增加基本的桌面通知.</h3>
 
-        <p>Electron conveniently allows developers to send notifications with the <a href="https://notifications.spec.whatwg.org/">HTML5 Notification API</a>, using the currently running operating system’s native notification APIs to display it.</p>
+        <p>Electron 允许开发者使用 <a href="https://notifications.spec.whatwg.org/">HTML5 Notification API</a> 发送通知, 并使用当前操作系统的原生通知 API 来显示.</p>
 
-        <p><b>Note:</b> Since this is an HTML5 API it is only available in the renderer process.</p>
+        <p><b>注意:</b> 由于这是一个 HTML5 API, 它只能在渲染器进程中使用.</p>
 
-        <p>Open the <a href="https://electron.atom.io/docs/all/#notifications-windows-linux-macos">full API documentation<span class="u-visible-to-screen-reader">(opens in new window)</span></a> in your browser.</p>
+        <p>在浏览器中查看 <a href="https://electron.atom.io/docs/all/#notifications-windows-linux-macos">在浏览器中查看<span class="u-visible-to-screen-reader">(在新窗口中打开)</span></a>.</p>
       </div>
     </header>
 
     <div class="demo">
       <div class="demo-wrapper">
-        <button id="basic-notification-demo-toggle" class="js-container-target demo-toggle-button">基础通知 Notification
-          <div class="demo-meta u-avoid-clicks">Supports: Win 7+, macOS, Linux (that supports libnotify)<span class="demo-meta-divider">|</span> Process: Renderer</div>
+        <button id="basic-notification-demo-toggle" class="js-container-target demo-toggle-button">基本通知
+          <div class="demo-meta u-avoid-clicks">支持: Win 7+, macOS, Linux (支持 libnotify)<span class="demo-meta-divider">|</span> 进程: Renderer</div>
         </button>
         <div class="demo-box">
           <div class="demo-controls">
-            <button class="demo-button" id="basic-noti">查看</button>
+            <button class="demo-button" id="basic-noti">查看示例</button>
           </div>
-          <p>添加标题、icon</p>
-          <h5>Renderer Process</h5>
+          <p>此示例演示了一个基本的通知. 只含有文字.</p>
+          <h5>渲染器进程</h5>
           <pre><code data-path="renderer-process/native-ui/notifications/basic-notification.js"></pre></code>
         </div>
       </div>
@@ -34,15 +34,15 @@
 
     <div class="demo">
       <div class="demo-wrapper">
-        <button id="advanced-notification-demo-toggle" class="js-container-target demo-toggle-button">图文通知 Notification
-          <div class="demo-meta u-avoid-clicks">Supports: Win 7+, macOS, Linux (that supports libnotify) <span class="demo-meta-divider">|</span> Process: Renderer</div>
+        <button id="advanced-notification-demo-toggle" class="js-container-target demo-toggle-button">基本通知
+          <div class="demo-meta u-avoid-clicks">支持: Win 7+, macOS, Linux (支持 libnotify) <span class="demo-meta-divider">|</span> 进程: Renderer</div>
         </button>
         <div class="demo-box">
           <div class="demo-controls">
-            <button class="demo-button" id="advanced-noti">View demo</button>
+            <button class="demo-button" id="advanced-noti">查看示例</button>
           </div>
-          <p>支持标题、icon、图片</p>
-          <h5>Renderer Process</h5>
+          <p>此示例演示了一个基本的通知. 同时含有文字和图像.</p>
+          <h5>渲染器进程</h5>
           <pre><code data-path="renderer-process/native-ui/notifications/advanced-notification.js"></pre></code>
         </div>
       </div>

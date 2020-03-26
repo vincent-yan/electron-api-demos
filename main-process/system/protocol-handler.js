@@ -10,5 +10,5 @@ if (process.defaultApp) {
 }
 
 app.on('open-url', (event, url) => {
-  dialog.showErrorBox('Welcome Back', `You arrived from: ${url}`)
+  dialog.showErrorBox('欢迎回来', `您来自: ${url}`)
 })

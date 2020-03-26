@@ -2,7 +2,7 @@ const {ipcMain, dialog} = require('electron')
 
 ipcMain.on('save-dialog', (event) => {
   const options = {
-    title: 'Save an Image',
+    title: '保存图像',
     filters: [
       { name: 'Images', extensions: ['jpg', 'png', 'gif'] }
     ]

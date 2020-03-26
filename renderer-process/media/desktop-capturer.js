@@ -8,7 +8,7 @@ const screenshot = document.getElementById('screen-shot')
 const screenshotMsg = document.getElementById('screenshot-path')
 
 screenshot.addEventListener('click', (event) => {
-  screenshotMsg.textContent = 'Gathering screens...'
+  screenshotMsg.textContent = '正在截取屏幕...'
   const thumbSize = determineScreenShotSize()
   let options = { types: ['screen'], thumbnailSize: thumbSize }
 
@@ -16,14 +16,14 @@ screenshot.addEventListener('click', (event) => {
     if (error) return console.log(error)
 
     sources.forEach((source) => {
-      if (source.name === 'Entire Screen' || source.name === 'Screen 1') {
+      if (source.name === 'Entire screen' || source.name === 'Screen 1') {
         const screenshotPath = path.join(os.tmpdir(), 'screenshot.png')
 
         fs.writeFile(screenshotPath, source.thumbnail.toPNG(), (error) => {
           if (error) return console.log(error)
           shell.openExternal(`file://${screenshotPath}`)
 
-          const message = `Saved screenshot to: ${screenshotPath}`
+          const message = `截图保存到: ${screenshotPath}`
           screenshotMsg.textContent = message
         })
       }
