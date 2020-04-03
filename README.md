@@ -3,10 +3,6 @@
 [![Build Status](https://travis-ci.org/electron/electron-api-demos.svg?branch=master)](https://travis-ci.org/electron/electron-api-demos)
 [![JavaScript Standard Style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](http://standardjs.com)
 
-> 此项目同步自 [electron](https://github.com/electron) 的 [electron-api-demos](https://github.com/electron/electron-api-demos) 项目. 除特殊情况, 将保持每两周一次的同步频率.
-> 
-> 更新日志请参阅: [CHANGELOG.md](CHANGELOG.md)
-
 这是一个交互式的桌面应用程序, 通过示例代码演示了 [Electron](http://electron.atom.io) API 的核心特性. 当然, 它也是由 Electron 构建的. 此应用程序适用于 Windows, macOS 和 Linux 操作系统.
 
 通过这个应用程序, 你可以了解用 Electron 能够做什么并使用源代码来学习如何创建一个基本的 Electron 应用程序.
